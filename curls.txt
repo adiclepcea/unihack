@@ -1,0 +1,7 @@
+#Insert observation
+curl -p -XPOST -H 'Content-Type:application/json' localhost:8080/observation -d '{"latitude":12.33, "longitude":11.2, "ship":{"id":1}, "observer":{"id":1}}'
+#Insert observer
+curl -p -XPOST -H 'Content-Type:application/json' localhost:8080/observer -d '{"name":"Mickey Mouse", "email":"mickey@mouse.com", "phone":"0777222333"}'
+#Insert ship
+curl -p -XPOST -H 'Content-Type:application/json' localhost:8080/ship -d '{"name":"whaler-baller", "captain":"Ahmedino","country":"Bolivia"}'
+curl -p -XPOST -H 'Content-Type:application/json' localhost:8080/ship -d '{"name":"Pequod", "captain":"Ahab","country":"UK"}'
