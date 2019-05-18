@@ -21,6 +21,7 @@ stop-mysql:
 
 build:
 	docker rmi whale | true
+	gradle build
 	cp build/libs/unihack-0.0.1-SNAPSHOT.jar docker/
 	cd docker && docker-compose build whale && cd ..
 
